@@ -16,11 +16,10 @@ export default function Home() {
 
     const {data, error, isLoading} = useSWR<IModel[]>('/api/models', fetcher, {
         revalidateOnFocus: false,
-        revalidateOnMount: false,
+        revalidateOnMount: true,
         revalidateOnReconnect: true,
         refreshWhenOffline: false,
         refreshWhenHidden: false,
-        refreshInterval: 0
     })
 
 
