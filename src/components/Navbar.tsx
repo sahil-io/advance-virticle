@@ -2,6 +2,7 @@ import {FC} from "react";
 import Image from "next/image";
 import Logo from '../../public/logo.png'
 import VirticleLogo from '../../public/viticle-logo.png'
+import Link from "next/link";
 
 
 const Navbar: FC = () => {
@@ -13,15 +14,15 @@ const Navbar: FC = () => {
 
 
                     <div>
-                        <a
+                        <Link
                             className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
-                            href="#"
+                            href="/"
                         >
                             <Image
                                 width={200}
                                 priority
                                 src={Logo} alt={"Advance Auto Logo"}/>
-                        </a>
+                        </Link>
                     </div>
                     <div className={"flex items-center gap-2 text-black font-light text-sm opacity-50 absolute right-2 inset-y-0 scale-50 md:scale-100"}>
                         Powered by <Image src={VirticleLogo} width={100} alt={"Virticle Logo"}/>
