@@ -56,7 +56,7 @@ export default function Home() {
                                 </div>
                             </div>)}
 
-                            {data?.map(model => <CarCard {...model} key={model.uid}/>)}
+                            {data?.filter(model => !!model.frames).map(model => <CarCard {...model} key={model.uid}/>)}
 
                         </div>
                     </div>
