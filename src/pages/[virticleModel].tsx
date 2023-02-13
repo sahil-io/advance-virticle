@@ -29,7 +29,7 @@ const VirticleModel: NextPage<Props> = ({model}) => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main
-                className={"bg-gray-100 bg-black text-gray-600 work-sans leading-normal text-base tracking-normal min-h-screen"}>
+                className={"bg-black text-gray-600 work-sans leading-normal text-base tracking-normal min-h-screen"}>
                 <Navbar/>
                 <section className={"bg-gray-700 py-6"}>
                     <div className="px-6 mx-auto items-center flex text-white">
