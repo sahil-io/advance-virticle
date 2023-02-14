@@ -32,7 +32,7 @@ export default function Home() {
                 <Navbar/>
 
                 <section className="py-12">
-                    <div className="container mx-auto">
+                    <div className="container mx-auto px-4">
                         <h1 className={"text-xl text-black mb-1 uppercase tracking-wide"}>
                             Browse Our Virtual Garage
                         </h1>

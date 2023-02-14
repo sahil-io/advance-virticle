@@ -237,6 +237,14 @@ const CarViewer: FC<{ model: IModel }> = ({model}) => {
         axis: 'x',
     })
 
+    useEffect(() => {
+        if(canvasRef.current && window.innerWidth){
+            if(window.innerWidth < 700){
+                canvasRef.current.style.height = canvasRef.current.width / 3 + 'px'
+            }
+        }
+    }, [])
+
     return (
 
         <div className={"position-relative"}>
