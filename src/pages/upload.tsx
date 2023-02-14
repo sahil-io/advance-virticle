@@ -46,7 +46,6 @@ const UploadMulti: NextPage = () => {
     } = useDropzone({
         maxFiles: 2,
         multiple: true,
-        noClick: true,
         accept: {'video/*': []}
     });
 

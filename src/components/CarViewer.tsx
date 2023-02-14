@@ -227,14 +227,14 @@ const CarViewer: FC<{ model: IModel }> = ({model}) => {
     const bind = useDrag(({movement, last}) => {
         moveViewer(movement, last, -1)
     }, {
-        axis: 'x'
+        // axis: 'x'
     })
 
 
     const bindScroll = useWheel(({movement, last}) => {
         moveViewer(movement, last, 1)
     }, {
-        axis: 'x',
+        // axis: 'x',
     })
 
     useEffect(() => {
