@@ -45,7 +45,7 @@ const UploadMulti: NextPage = () => {
         isDragReject
     } = useDropzone({
         maxFiles: 1,
-        multiple: false,
+        multiple: true,
         accept: {'video/*': []}
     });
 
