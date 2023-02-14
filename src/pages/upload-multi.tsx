@@ -3,9 +3,11 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import {useDropzone} from 'react-dropzone';
 import axios from "axios";
-import {useMemo, useState} from "react";
+import {useMemo, useRef, useState} from "react";
 import {Upload} from "@aws-sdk/lib-storage";
-import {S3} from "@aws-sdk/client-s3";
+import {S3Client, S3} from "@aws-sdk/client-s3";
+import {toKeyAlias} from "@babel/types";
+import uid = toKeyAlias.uid;
 import ProgressBar from "@ramonak/react-progress-bar";
 
 const baseStyle = {
