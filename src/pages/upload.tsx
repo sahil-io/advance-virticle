@@ -105,10 +105,10 @@ const UploadMulti: NextPage = () => {
 
             const parallelUploads3 = new Upload({
                 client: new S3({
-                    region: 'us-west-2',
+                    region: process.env.NEXT_PUBLIC_REGION,
                     credentials: {
-                        accessKeyId: 'AKIAY4ETHUBZHYOHKYHH',
-                        secretAccessKey: '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',
+                        accessKeyId: process.env.NEXT_PUBLIC_ACCESS_KEY as string,
+                        secretAccessKey: process.env.NEXT_PUBLIC_SECRET_KEY as string,
                     }
                 }),
                 params: {Bucket: 'virticle-source-videos', Key: `raw/${fields.get('uid')}`, Body: acceptedFiles[0]},
