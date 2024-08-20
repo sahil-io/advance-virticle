@@ -23,25 +23,14 @@ const VirticleModel: NextPage<Props> = ({model}) => {
     return (
         <>
             <Head>
-                <title>Advance Auto | Virticle</title>
+                <title>Virticle</title>
                 <meta name="description" content="Advance Auto Virtual Garage"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main
                 className={"bg-black text-gray-600 work-sans leading-normal text-base tracking-normal min-h-screen"}>
-                <Navbar/>
-                <section className={"bg-gray-700 py-6"}>
-                    <div className="px-6 mx-auto items-center flex text-white">
-                        <Link href={"/"} passHref>
-                            <div className={"inline-block p-1 border-2"} >
-                            <BiArrowBack className={"text-white"}/></div>
-                        </Link>
-                        <h1 className={"ml-4 text-xl tracking-wider font-bold"}>
-                            {model.title}
-                        </h1>
-                    </div>
-                </section>
+              
                     <CarViewer model={model}/>
             </main>
         </>
