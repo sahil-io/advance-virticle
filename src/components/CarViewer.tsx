@@ -258,7 +258,7 @@ const CarViewer: FC<{ model: IModel }> = ({model}) => {
                     marginRight: 'auto'
                 }} {...bind()}>
                     <canvas data-pos={0} ref={canvasRef} style={{
-                        height: 'calc(100vh - 170px)',
+                        height: 'calc(100vh)',
                         width: '100%',
                         maxWidth: '100%',
                         objectFit: 'cover'
